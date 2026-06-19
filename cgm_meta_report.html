@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Said Adjao">
+<meta name="dcterms.date" content="2026-06-18">
+
+<title>Continuous Glucose Monitoring vs.&nbsp;Blood Glucose Monitoring in Non-Insulin-Treated Type 2 Diabetes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="cgm_meta_report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cgm_meta_report_files/libs/quarto-html/quarto.js"></script>
+<script src="cgm_meta_report_files/libs/quarto-html/popper.min.js"></script>
+<script src="cgm_meta_report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="cgm_meta_report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="cgm_meta_report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cgm_meta_report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="cgm_meta_report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="cgm_meta_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="cgm_meta_report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1</span> Summary</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">2</span> Background</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#eligibility-criteria" id="toc-eligibility-criteria" class="nav-link" data-scroll-target="#eligibility-criteria"><span class="header-section-number">3.1</span> Eligibility criteria</a></li>
+  <li><a href="#information-sources-and-study-selection" id="toc-information-sources-and-study-selection" class="nav-link" data-scroll-target="#information-sources-and-study-selection"><span class="header-section-number">3.2</span> Information sources and study selection</a></li>
+  <li><a href="#data-extraction" id="toc-data-extraction" class="nav-link" data-scroll-target="#data-extraction"><span class="header-section-number">3.3</span> Data extraction</a></li>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis"><span class="header-section-number">3.4</span> Statistical analysis</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">4</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#validation" id="toc-validation" class="nav-link" data-scroll-target="#validation"><span class="header-section-number">4.1</span> Validation</a></li>
+  </ul></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations"><span class="header-section-number">5</span> Limitations</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Continuous Glucose Monitoring vs.&nbsp;Blood Glucose Monitoring in Non-Insulin-Treated Type 2 Diabetes</h1>
+<p class="subtitle lead">A reproducible meta-analysis of HbA1c outcomes</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Said Adjao </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 18, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1</span> Summary</h2>
+<p>This report synthesizes randomized evidence on continuous glucose monitoring (CGM) versus blood glucose monitoring (BGM) for glycaemic control in adults with type 2 diabetes <strong>not treated with insulin</strong> — a population for which CGM coverage is frequently restricted. Pooling 8 trials, CGM was associated with a mean HbA1c reduction of <strong>-0.42%</strong> (95% CI -0.59 to -0.25), with no detectable between-study heterogeneity (I² = 0%). The estimate is consistent with a recently published meta-analysis, supporting a modest but reliable benefit in this population.</p>
+</section>
+<section id="background" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="background"><span class="header-section-number">2</span> Background</h2>
+<p>Most clinical-trial evidence and payer coverage for CGM in type 2 diabetes derives from insulin-treated populations. Whether the benefit extends to non-insulin-treated patients — the larger group, and the one typically excluded from CGM reimbursement — is a distinct question with direct cost and coverage implications. This analysis synthesizes the randomized evidence specific to that population.</p>
+</section>
+<section id="methods" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="methods"><span class="header-section-number">3</span> Methods</h2>
+<section id="eligibility-criteria" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="eligibility-criteria"><span class="header-section-number">3.1</span> Eligibility criteria</h3>
+<p>Randomized controlled trials were eligible if they enrolled adults with type 2 diabetes treated <strong>exclusively with non-insulin therapies</strong>, compared any CGM modality (intermittently scanned, real-time, or professional) against BGM or usual care, and reported HbA1c as an outcome. Trials enrolling any insulin-treated participants were excluded.</p>
+</section>
+<section id="information-sources-and-study-selection" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="information-sources-and-study-selection"><span class="header-section-number">3.2</span> Information sources and study selection</h3>
+<p>The trial set was harvested from a 2025 systematic review by Aronson and colleagues that applied the same non-insulin-only inclusion criterion, providing a transparent and reproducible starting point. Eight trials met criteria.</p>
+</section>
+<section id="data-extraction" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="data-extraction"><span class="header-section-number">3.3</span> Data extraction</h3>
+<p>HbA1c effect estimates were obtained by two routes. For two trials, the between-group mean difference and its dispersion were extracted directly from the primary publications. For the remaining six, the standard error was back-calculated from the reported mean difference and its p-value or confidence interval — a standard technique where standard errors are not printed directly. The extraction route for each trial is shown in the results table. One trial reporting HbA1c in IFCC units (mmol/mol) was converted to DCCT/NGSP units (%) prior to pooling.</p>
+</section>
+<section id="statistical-analysis" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">3.4</span> Statistical analysis</h3>
+<p>Effects were pooled using an inverse-variance random-effects model (mean difference scale), implemented with the <code>meta</code> package in R. Random effects were chosen a priori because the trials differed in CGM modality, follow-up duration, and co-interventions, making a single common true effect implausible. Heterogeneity was quantified with I².</p>
+</section>
+</section>
+<section id="results" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="results"><span class="header-section-number">4</span> Results</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<caption>HbA1c mean difference (CGM − BGM), % points. Negative favors CGM.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 17%">
+<col style="width: 8%">
+<col style="width: 20%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Study</th>
+<th style="text-align: left;">Device</th>
+<th style="text-align: right;">MD</th>
+<th style="text-align: left;">95% CI</th>
+<th style="text-align: left;">Effect source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Wada 2020</td>
+<td style="text-align: left;">isCGM</td>
+<td style="text-align: right;">-0.29</td>
+<td style="text-align: left;">(-0.54, -0.04)</td>
+<td style="text-align: left;">Back-calculated</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Aronson 2023 (IMMEDIATE)</td>
+<td style="text-align: left;">isCGM</td>
+<td style="text-align: right;">-0.30</td>
+<td style="text-align: left;">(-0.6, 0)</td>
+<td style="text-align: left;">Back-calculated</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lau 2024</td>
+<td style="text-align: left;">isCGM</td>
+<td style="text-align: right;">-0.65</td>
+<td style="text-align: left;">(-1.13, -0.17)</td>
+<td style="text-align: left;">Back-calculated</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ssemmondo 2025</td>
+<td style="text-align: left;">isCGM</td>
+<td style="text-align: right;">-0.73</td>
+<td style="text-align: left;">(-1.74, 0.28)</td>
+<td style="text-align: left;">Primary paper</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cox 2020</td>
+<td style="text-align: left;">rtCGM</td>
+<td style="text-align: right;">-1.11</td>
+<td style="text-align: left;">(-2.3, 0.08)</td>
+<td style="text-align: left;">Primary paper</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Moon 2023</td>
+<td style="text-align: left;">rtCGM</td>
+<td style="text-align: right;">-0.60</td>
+<td style="text-align: left;">(-1.1, -0.1)</td>
+<td style="text-align: left;">Back-calculated</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Price 2021 (COMMITTED)</td>
+<td style="text-align: left;">rtCGM</td>
+<td style="text-align: right;">-0.30</td>
+<td style="text-align: left;">(-2.07, 1.47)</td>
+<td style="text-align: left;">Back-calculated</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Allen 2008</td>
+<td style="text-align: left;">Professional</td>
+<td style="text-align: right;">-0.84</td>
+<td style="text-align: left;">(-1.68, 0)</td>
+<td style="text-align: left;">Back-calculated</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="cgm_meta_report_files/figure-html/forest-plot-1.png" class="img-fluid" width="864"></p>
+</div>
+</div>
+<p>Pooling all 8 trials, CGM was associated with a significantly greater HbA1c reduction than BGM (mean difference <strong>-0.42%</strong>; 95% CI -0.59 to -0.25). Between-study heterogeneity was absent (I² = 0%), though this should be interpreted cautiously given the small number of small trials.</p>
+<section id="validation" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="validation"><span class="header-section-number">4.1</span> Validation</h3>
+<p>This pooled estimate is consistent with the published benchmark (−0.37%; 95% CI −0.49 to −0.24), reproducing a peer-reviewed result from the primary data. Minor differences are attributable to the standard-error derivation and missing-data imputation approaches.</p>
+</section>
+</section>
+<section id="limitations" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="limitations"><span class="header-section-number">5</span> Limitations</h2>
+<p>Several limitations temper confidence in the pooled estimate. The evidence base is small (8 trials, most with modest sample sizes), limiting the precision of the heterogeneity estimate; an I² of 0% in this setting reflects absence of <em>detected</em> heterogeneity rather than strong evidence of consistency. All trials were open-label, raising the possibility of performance and detection bias. Several interventions bundled CGM with structured education or lifestyle programmes, so the pooled effect reflects CGM-plus-support rather than the device in isolation. Finally, six of eight effect estimates were back-calculated; these should be verified against the published forest plot before any formal use.</p>
+</section>
+<section id="references" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="references"><span class="header-section-number">6</span> References</h2>
+<ol type="1">
+<li>Aronson R, et al.&nbsp;Continuous glucose monitoring in noninsulin-treated type 2 diabetes. <em>Diabetes Obes Metab.</em> 2025;27(11):6220–6242.</li>
+<li>Aronson R, et al.&nbsp;IMMEDIATE trial. <em>Diabetes Obes Metab.</em> 2023;25(4):1024–1031.</li>
+<li>Lau D, Manca DP, Singh P, et al.&nbsp;The effectiveness of continuous glucose monitoring with remote telemonitoring-enabled virtual educator visits in adults with non-insulin dependent type 2 diabetes: a randomized trial. <em>Diabetes Res Clin Pract.</em> 2024.</li>
+<li>Ssemmondo E, Shah N, Newham M, et al.&nbsp;Effect of introduction of intermittently scanned continuous glucose monitoring on glycaemic control in individuals with type 2 diabetes treated with non-insulin therapies. <em>Diabetes Obes Metab.</em> 2025;27(3):1226–1232.</li>
+<li>Cox DJ, Banton T, Moncrief M, et al.&nbsp;Minimizing glucose excursions (GEM) with continuous glucose monitoring in type 2 diabetes: a randomized clinical trial. <em>J Endocr Soc.</em> 2020;4(11):bvaa118.</li>
+<li>Moon SJ, Kim KS, Lee WJ, et al.&nbsp;Efficacy of intermittent short-term use of a real-time continuous glucose monitoring system in non-insulin-treated patients with type 2 diabetes: a randomized controlled trial. <em>Diabetes Obes Metab.</em> 2023;25(1):110–120.</li>
+<li>Price DA, Deng Q, Kipnes M, Beck SE. Episodic real-time CGM use in adults with type 2 diabetes (COMMITTED): results of a pilot randomized controlled trial. <em>Diabetes Ther.</em> 2021;12(7):2089–2099.</li>
+<li>Allen NA, Fain JA, Braun B, Chipkin SR. Continuous glucose monitoring counseling improves physical activity behaviors of individuals with type 2 diabetes: a randomized clinical trial. <em>Diabetes Res Clin Pract.</em> 2008;80:371–379.</li>
+<li>Wada E, Onoue T, Kobayashi T, et al.&nbsp;Flash glucose monitoring helps achieve better glycemic control than conventional self-monitoring of blood glucose in non-insulin-treated type 2 diabetes: a randomized controlled trial. <em>BMJ Open Diabetes Res Care.</em> 2020;8(1):e001115.</li>
+</ol>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
